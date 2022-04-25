@@ -1,0 +1,97 @@
+.footer {
+    width: 100%;
+    background-color: #141948;
+
+    .footer-inside {
+        width: 90%;
+        margin: auto;
+
+        img {
+            width: 160px;
+        }
+
+        p {
+            color: #DDDFE3;
+            font-size: 16px;
+            padding-top: 20px;
+        }
+
+        .icons {
+            display: flex;
+
+            i {
+                color: #3BBCA7;
+                width: 35px;
+                margin-right: 10px;
+                height: 35px;
+                font-size: 16px;
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 1px 1px 1px 1px;
+                border-color: #3BBCA7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .2s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #3BBCA7;
+                }
+            }
+        }
+
+        ul {
+            i {
+                color: #3BBCA7;
+                padding-right: 10px;
+            }
+
+            h5 {
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: #DDDFE3;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .contact-ul {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .faq {
+        border-top: 1px solid rgba(128, 128, 128, 0.425);
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-top: 60px;
+
+        h6 {
+            padding-top: 20px;
+            color: #DDDFE3;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+}

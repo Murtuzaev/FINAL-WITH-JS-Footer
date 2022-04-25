@@ -1,0 +1,97 @@
+.footer {
+  width: 100%;
+  background-color: #141948;
+}
+
+.footer .footer-inside {
+  width: 90%;
+  margin: auto;
+}
+
+.footer .footer-inside img {
+  width: 160px;
+}
+
+.footer .footer-inside p {
+  color: #DDDFE3;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.footer .footer-inside .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-inside .icons i {
+  color: #3BBCA7;
+  width: 35px;
+  margin-right: 10px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #3BBCA7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.footer .footer-inside .icons i:hover {
+  color: #fff;
+  background-color: #3BBCA7;
+}
+
+.footer .footer-inside ul i {
+  color: #3BBCA7;
+  padding-right: 10px;
+}
+
+.footer .footer-inside ul h5 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer .footer-inside ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-inside ul li a {
+  text-decoration: none;
+  color: #DDDFE3;
+}
+
+.footer .footer-inside ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-inside .contact-ul ul li a:hover {
+  text-decoration: none;
+}
+
+.footer .faq {
+  border-top: 1px solid rgba(128, 128, 128, 0.425);
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer .faq h6 {
+  padding-top: 20px;
+  color: #DDDFE3;
+  font-size: 15px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
