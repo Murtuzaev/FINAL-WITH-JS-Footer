@@ -1,30 +1,27 @@
+@import "./lp";
+// ===== FOOTER START ======
 .footer {
     width: 100%;
     background-color: #141948;
-
     .footer-inside {
         width: 90%;
         margin: auto;
-
         img {
             width: 160px;
         }
-
         p {
             color: #DDDFE3;
             font-size: 16px;
             padding-top: 20px;
         }
-
         .icons {
             display: flex;
-
             i {
                 color: #3BBCA7;
                 width: 35px;
                 margin-right: 10px;
                 height: 35px;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 30px;
                 border-style: solid;
                 border-width: 1px 1px 1px 1px;
@@ -34,39 +31,32 @@
                 align-items: center;
                 transition: .2s ease-in-out;
                 cursor: pointer;
-
                 &:hover {
                     color: #fff;
                     background-color: #3BBCA7;
                 }
             }
         }
-
         ul {
             i {
                 color: #3BBCA7;
                 padding-right: 10px;
             }
-
             h5 {
                 color: #fff;
                 margin-bottom: 20px;
             }
-
             li {
                 margin-bottom: 10px;
-
                 a {
                     text-decoration: none;
                     color: #DDDFE3;
-
                     &:hover {
                         text-decoration: underline;
                     }
                 }
             }
         }
-
         .contact-ul {
             ul {
                 li {
@@ -79,19 +69,85 @@
             }
         }
     }
-
     .faq {
         border-top: 1px solid rgba(128, 128, 128, 0.425);
         width: 90%;
         margin: auto;
         text-align: center;
         margin-top: 60px;
-
         h6 {
-            padding-top: 20px;
+            padding: 20px 0;
             color: #DDDFE3;
             font-size: 15px;
             font-weight: 400;
         }
     }
+}
+// ====== FOOTER END ========
+.to-top{
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition:  all .4s;
+    &.active{
+        opacity: 1;
+        bottom: 32px;
+        pointer-events: auto;
+    }
+}
+
+
+@media (max-width: 576px) {
+ .footer{
+     .footer-inside{
+         img{
+             padding-top: 40px;
+         }
+       p{
+           width: 90%;
+       }
+       .icons{
+           padding-top: 10px;
+       }
+       ul{
+           padding-top: 40px;
+       }
+     }
+ }
+ }
+
+
+@media (max-width: 768px) {
+   .footer{
+       .footer-inside{
+           ul{
+               padding-top: 20px;
+           }
+       }
+   }
+ }
+
+@media (max-width: 992px) {
+
+ }
+
+
+@media (max-width: 1200px) {
+
+ }
+
+
+@media (max-width: 1400px) { 
+
 }
