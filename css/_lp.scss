@@ -175,7 +175,118 @@
             box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
             border-radius: 5px 5px 0 0;
             margin: 20px 0;
+            position: relative;
             cursor: pointer;
+            &:hover{
+                .overlay{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .overlay{
+                position: absolute;
+                width: 100%;
+                top: -10px;
+                width: 360px;
+                left: -30px;
+                background-color: white;
+                box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .1);
+                padding: 40px 0px;
+                transition: .3s ease-in-out;
+                z-index: 100;
+                opacity: 0;
+                visibility: hidden;
+             .overlay-top{
+                 display: flex;
+                 flex-wrap: wrap;
+                 img{
+                     width: 35px;
+                     border-radius: 50px;
+                 }
+                 h6{
+                    font-size: 15px;
+                    color: #838383;
+                    margin-top: 5px;
+                    padding-left: 10px;
+                 }
+             }
+            }
+            .overlay-down{
+              .overlay-button{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                a{
+                    text-decoration: none;
+                    color: #3BBCA7;
+                    font-size: 13px;
+                    font-weight: bold;
+                    background-color: rgba(128, 128, 128, 0.086);
+                    padding: 5px 5px;
+                    border-radius: 3px;
+                    transition: .3s ease-in-out;
+                    &:hover{
+                        color: white;
+                        background-color: #3BBCA7;
+                    }
+                 }
+                 h5{
+                     font-weight: 600;
+                     color: #072F60;
+                     font-size: 17px;
+                     margin-right: 20px;
+                  
+                 }
+              }    
+              h6{
+                margin-top: 20px;
+                font-size: 18px;
+                color: #072F60;
+                font-weight: 600;
+                transition: .3s ease-in-out;
+                &:hover{
+                    color: #3BBCA7;
+                }
+            }  
+            .overlay-icon{
+                margin-top: 15px;
+                i{
+                    color: #3BBCA7;
+                    padding: 5px;
+                    span{
+                        color: #838383;
+                        font-size: 12px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+             p{
+                color: #838383;
+                margin-top: 15px;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 28px;
+                width: 95%;
+             }   
+             .overlay-button-2{
+                 text-align: center;
+                 a{
+                     text-decoration: none;
+                     color: white;
+                     background-color: #3BBCA7;
+                     padding: 10px 80px;
+                     margin: 10px 10px 0 0;
+                     display: inline-block;
+                     border-radius: 3px;
+                     transition: .3s ease-in-out;
+                     &:hover{
+                         background-color: #072F60;
+                     }
+                 }
+             }
+            }
             .rate-top{
                 img{
                     width: 300px;
@@ -279,6 +390,11 @@
             color: #666666;
             font-size: 16px;
             line-height: 35px;
+            i{
+                color: #3BBCA7;
+                font-size: 18px;
+                padding-right: 5px
+            }
         }
     }
     a{
@@ -297,6 +413,81 @@
     }
 }
 // ====== IMROZ END =======
+
+// ====== VIDEO START =======
+.video{
+    margin-top: 90px;
+    .video-text{
+        text-align: center;
+        h2{
+            font-weight: 600;
+            font-size: 36px;
+            color: #072f60;
+            span{
+                background-color: #FFD24D;
+                border-radius: 50px;
+            }
+        }
+    }
+    .video-sec{
+        margin-top: 60px;
+        .video-1{
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            img{
+                transition: .5s ease-in-out;
+                border-radius: 10px;
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+            }
+            .overlay-1{
+              background-color: rgba(0, 0, 0, 0.234);
+              width: 100%;
+              height: 350px;
+              position: absolute;
+              top: 0;
+            }
+            .video-icon{
+                position: absolute;
+                top: 57%;
+                z-index: 100;
+                padding: 0 30px;
+                i{
+                    color: #3BBCA7;
+                    font-size: 22px;
+                    width: 45px;
+                    height: 45px;
+                    background-color: white;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                h6{
+                    color: white;
+                    margin-top: 20px;
+                    font-weight: bold;
+                    width: 95%;
+                    font-size: 18px;
+                    transition: .5s ease-in-out;
+                    &:hover{
+                        color: #3BBCA7;
+                    }
+                }
+            }
+            &:hover{
+              img{
+                transform: scale(1.1);
+                 border-radius: 10px;
+
+              }
+            }
+        }
+    }
+}
+// ====== VIDEO END =======
 
 // ====== SCROLL TOP =======
 .to-top{
